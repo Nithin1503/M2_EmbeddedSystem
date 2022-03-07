@@ -24,7 +24,9 @@
     
    3.2. [CIRCUIT DIAGRAM](#circuit-diagram)
    
-   3.3. [COMPONENT DESCRIPTION](#component-description)
+   3.3. [COMPONENTS](#components)
+   
+   3.4. [COMPONENT DESCRIPTION](#component-description)
 
 4. [ARCHITECTURE](#architecture)
    
@@ -59,41 +61,38 @@ In this project, we are going to control a Relay using Arduino UNO to drive a hi
 
 ID     | Description
 -------| -----------------------------------------
-HLR 1  |To Refill the water tank automatically when tank becomes empty.
-HLR 2  |Alert the user when the tank is filled.
-HLR 3  |To check the quality of water and alert user.
-HLR 4  |To turn ON the motor when the tank becomes empty.
+HLR 1  |When the push button is OFF the motor should turn OFF
+HLR 2  |When the push button is ON the motor should turn ON
+HLR 3  |Arduino should control the relay
+HLR 4  |Relay should drive the motor
 
 ## 2.2 Low Level Requirements:
 
-
-ID     | Description
--------| -----------------------------------------
-LLR 1  |A Microcontroller is used for controlling the process.
-LLR 1.1  |A water level sensor is used to check the water level.
-LLR 2  |Buzzer is used to alert the user.
-LLR 3  |A water Quality sensor is used to chechk the quality of the water
-LLR 4  |A Motor Driver shall be used to switch ON the motor.
+| ID | Low Level Requirements for HL1|       |ID | Low Level Requirements for HL2|
+| -------- | -------------- | ---- |-------- | -------------- |
+| LLR1.1 | When the push button is OFF the arduino should detects logic 0  | | LLR2.1 | When the push button is ON the arduino should detects logic 1 |
+| LLR1.2 | When the arduino detects logic 0 the transistor will be OFF || LLR2.2 | When the arduino detects logic 1 the transistor will be ON  |
 
 ## 2.3 SWOT ANALYSIS
 
 ### STRENGTH
 
+  * Simple
   * Automation
-  * Wastage of water is eliminated.
-  * Water quality is maintained
+  * Easy to control
   * Less power consumption.
+
 
 ### WEAKNESS
 
   * Can be damaged by external factors.
-  * Sensors need frequents cleaning.
+  * Push button can damage easily.
 
 ### OPPURTUNITIES
 
   * Adopting to new technology.
   * Automation can be achieved.
-  * Can be developed to purifier as well.
+  * Can be developed to remote control appliances.
 
 ### THREATS
 
@@ -103,15 +102,15 @@ LLR 4  |A Motor Driver shall be used to switch ON the motor.
 ## 2.4 5W'S 1H
 
 ### WHAT
-   This a controller that helps to automaticlly refill the water tank using sensors and micro controller.
+   This a controller that helps to control the relay by using ardunio to drive the high load.
 ### WHEN
-   It is used when we need to fill water to the pressure tank.
+   It is used when we need to automate the things.
 ### WHERE
-   It can be used in domestic,Industrial as well as Commercial complexes.
+   It can be used in home automations,remote control of appliances etc.
 ### WHO
    Normal consumers are the people who use this.
 ### WHY
-   Inorder to refill water to the tank without wastage.
+   Inorder to control the relay.
 ### HOW
    By using a micro-controller, sensors and few actuators.
    
@@ -119,35 +118,58 @@ LLR 4  |A Motor Driver shall be used to switch ON the motor.
 
 ## 3.1 BLOCK DIAGRAM
 
-![image](https://user-images.githubusercontent.com/98815562/155871277-697ab2ee-c0bb-45dd-9eaa-49acb325e3ab.png)
+![image](https://user-images.githubusercontent.com/98839429/157028529-7df20754-2e4a-4ba4-949f-736eb197503a.png)
 
-## 3.2 COMPONENTS DESCRIPTION
+## 3.2 CIRCUIT DIAGRAM
 
-### Microcontroller
-      Microcontroller is used to control the overall process in automating the refill of water into the tank.
+![image](https://user-images.githubusercontent.com/98839429/157028923-33dc8b14-6ddf-479d-8b4a-c85668f534ed.png)
+
+## 3.3 COMPONENTS 
+
+* Arduino UNO
+* Diode
+* BJT Transistor
+* 1KΩ Resistor
+* Push button
+* Power supply – 5V and 12V
+* Motor
+
+## 3.3 COMPONENTS DESCRIPTION
+
+### ARDUINO UNO
+As mentioned in the project introduction, a microcontroller is used to drive the relay. Hence, Arduino UNO, which is an ATmega 328P microcontroller based prototyping   board, is used in the project.
 
 ### SENSORS
-#### Water level sensor
-    Two water level sensors are used to detect the water level. One for detecting if the tank is empty and another one detecting the top level of the tank.
-
-#### Water Quality sensor
-    A water quality sensor is used to check the sediments and excess chlorine in the water and alert the user.
+#### PUSH BUTTON SENSOR
+In this project i am used push button as a sensor it will send the signal to arduino to run.
 
 ### ACTUATORS
 
-#### Motor Driver Circuit
-    Motor Driver circuit is used to switch on and off the based upon the signals received from the sensors.
+#### RELAY
+A relay is a type of switch that provides connection between a low power circuit and a high power circuit. Electromechanical relays are the most commonly used relays and consists of a coil that acts as an electromagnet and moving contacts.
 
-#### Buzzer
-    A buzzer is used to alert the user once the tank is filled.
+Generally, a relay consists of five terminals: two coil terminals, a common terminal (COMM), a normally open terminal (NO) and a normally closed terminal (NC).
 
-#### LED’s
-    Two LED’s are used to alert the user regarding the quality of the water.
-     * RED – The water is impure.
-     * GREEN – The water is pure.
+A low power signal from a microcontroller is given to the coil (usually through a transistor) and the other three terminals i.e. NO, NC and COMM are connected to the high voltage supply along with the load. 
 
-### Power Supply
-     AC power supply is converted to DC and given to the circuit in order to run it.
+#### MOTOR
+In this project i am used motor as High Level load.
+    
+### OTHER COMPONENTS
+
+#### DOIDE
+This diode acts as a flyback or a freewheeling diode in the circuit. Such diodes are often used in inductive circuits. When the power to the circuit is turned off, since the coil in the relay is an inductor, the current in it cannot be changed instantly. In such cases, a freewheeling diode provides a path to the current.
+
+Diodes are often used in DC powered inductive circuits whereas a snubber circuit is used in AC powered inductive circuits.
+
+#### BJT TRANSISTOR
+It is an NPN transistor generally used for medium power amplifier and switching applications for currents up to 1 A. In this project, it is used as a switch which turns on or off the relay.
+   
+#### RESISTOR
+It opposes the flow of current.
+    
+#### POWER SUPPLY
+ AC power supply is converted to DC and given to the circuit in order to run it.
      
 # 4.ARCHITECTURE
 
@@ -155,26 +177,27 @@ LLR 4  |A Motor Driver shall be used to switch ON the motor.
 
 ### 4.1.1 HIGH LEVEL BEHAVIOURAL DIAGRAM
 
-![HIGH LEVEL](https://user-images.githubusercontent.com/98815562/155871590-bd805006-668d-470c-b722-aff56ff43e8f.png)
+![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/156936137-c10817cb-7f99-4b31-b6c4-4a5a301e21d2.png)
 
 ### 4.1.2 LOW LEVEL BEHAVIOURAL DIAGRAM
 
-![LOW LEVEL](https://user-images.githubusercontent.com/98815562/155871625-8b8a5161-09f7-42a5-9650-374fd5274952.png)
+![LOW LEVEL](https://user-images.githubusercontent.com/98839429/156936236-bfa0c3cf-06a9-4b8f-8505-ac979539bd40.png)
 
 ## 4.2 STRUCTURAL DIAGRAMS
 
 ### 4.2.1 HIGH LEVEL STRUCTURAL DIAGRAM
 
-![HIGH LEVEL](https://user-images.githubusercontent.com/98815562/155871676-56d668e8-d931-49cf-9be5-e3ae46af8d35.png)
+![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/156983594-85dcb5e8-50e8-49e2-a813-2c6a6236f2ed.png)
 
 ### 4.2.2 LOW LEVEL STRUCTURAL DIAGRAM
 
-![LOW LEVEL](https://user-images.githubusercontent.com/98815562/155871682-040c1e9a-2aa3-4144-834e-76bd9ea63c4c.png)
+![LOW LEVEL](https://user-images.githubusercontent.com/98839429/156988501-913daa59-e6d2-4283-9b63-f50f25fe3064.png)
 
 # 5.APPLICATIONS
-  * Houses
-  * Industries
-  * Schools
-  * Hospitals
-  * Commercial complexes
+  * In this project, an Arduino control of Relay is explained using a high current DC motor.
+  * As mentioned earlier, the circuit can be extended AC systems. Such circuits can be used to implement AC motor control, home automation, remote control of appliances etc.
+  * This circuit can also be implement in high power DC systems like motors, servos etc.
+  * It is used in speed based appilcations of motor.
+  * It is used in controlling unit of motors in vehicles and robots.
+
 
