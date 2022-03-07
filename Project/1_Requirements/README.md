@@ -58,6 +58,6 @@ HLR 4  |Relay should drive the motor
 ### WHO
    Normal consumers are the people who use this.
 ### WHY
-   Inorder to control the motor.
+   Inorder to control the relay.
 ### HOW
    By using a micro-controller, sensors and few actuators.
