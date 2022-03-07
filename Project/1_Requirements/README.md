@@ -50,7 +50,7 @@ HLR 4  |Relay should drive the motor
 ## 5W'S 1H
 
 ### WHAT
-   This a controller that helps to control the motor  by using relay.
+   This a controller that helps to control the relay by using ardunio to drive the high load.
 ### WHEN
    It is used when we need to automate the things.
 ### WHERE
