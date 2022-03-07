@@ -118,7 +118,7 @@ HLR 4  |Relay should drive the motor
 
 ## 3.1 BLOCK DIAGRAM
 
-![image](https://user-images.githubusercontent.com/98839429/157028529-7df20754-2e4a-4ba4-949f-736eb197503a.png)
+![image](https://user-images.githubusercontent.com/98839429/157085978-5ad83a86-ebe9-4d27-93d4-041e82f8ec3a.png)
 
 ## 3.2 CIRCUIT DIAGRAM
 
@@ -177,17 +177,17 @@ It opposes the flow of current.
 
 ### 4.1.1 HIGH LEVEL BEHAVIOURAL DIAGRAM
 
-![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/156936137-c10817cb-7f99-4b31-b6c4-4a5a301e21d2.png)
+![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/157086211-da9d5b95-6c2a-4a9f-9728-033c96d77590.png)
 
 ### 4.1.2 LOW LEVEL BEHAVIOURAL DIAGRAM
 
-![LOW LEVEL](https://user-images.githubusercontent.com/98839429/156936236-bfa0c3cf-06a9-4b8f-8505-ac979539bd40.png)
+![LOW LEVEL](https://user-images.githubusercontent.com/98839429/157086556-434c3ffa-71c8-438f-9863-3ac77c0a703a.png)
 
 ## 4.2 STRUCTURAL DIAGRAMS
 
 ### 4.2.1 HIGH LEVEL STRUCTURAL DIAGRAM
 
-![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/156983594-85dcb5e8-50e8-49e2-a813-2c6a6236f2ed.png)
+![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/157086840-30631403-6b69-417b-b4dc-0dfc71061ee4.png)
 
 ### 4.2.2 LOW LEVEL STRUCTURAL DIAGRAM
 
