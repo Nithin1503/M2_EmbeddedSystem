@@ -29,7 +29,7 @@ HLR 4  |Relay should drive the motor
   * Simple
   * Automation
   * Easy to control
-  * Less power consumption.
+  * Less power consumption
 
 ### WEAKNESS
 
@@ -44,7 +44,7 @@ HLR 4  |Relay should drive the motor
 
 ### THREATS
 
-  * External Damage.
+  * External Damage
   * Theft
 
 ## 5W'S 1H
