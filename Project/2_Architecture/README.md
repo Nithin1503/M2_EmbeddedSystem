@@ -19,4 +19,5 @@
 
 ### 2.2 LOW LEVEL STRUCTURAL DIAGRAM
 
-![LOW LEVEL](https://user-images.githubusercontent.com/98815562/155871682-040c1e9a-2aa3-4144-834e-76bd9ea63c4c.png)
+![LOW LEVEL](https://user-images.githubusercontent.com/98839429/156988501-913daa59-e6d2-4283-9b63-f50f25fe3064.png)
+
