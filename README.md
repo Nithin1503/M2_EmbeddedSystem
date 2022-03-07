@@ -1,2 +1,4 @@
-# M2_EmbeddedSystem
-How to design a Embedded system
+## M2_EmbeddedSystem
+  
+ARDUINO RELAY CONTROL
+
