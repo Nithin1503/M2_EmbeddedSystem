@@ -15,7 +15,7 @@
 
 ### 2.1 HIGH LEVEL STRUCTURAL DIAGRAM
 
-![HIGH LEVEL](https://user-images.githubusercontent.com/98815562/155871676-56d668e8-d931-49cf-9be5-e3ae46af8d35.png)
+![HIGH LEVEL](https://user-images.githubusercontent.com/98839429/156983594-85dcb5e8-50e8-49e2-a813-2c6a6236f2ed.png)
 
 ### 2.2 LOW LEVEL STRUCTURAL DIAGRAM
 
