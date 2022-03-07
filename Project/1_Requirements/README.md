@@ -11,7 +11,8 @@ ID     | Description
 -------| -----------------------------------------
 HLR 1  |When the push button is OFF the motor should turn OFF
 HLR 2  |When the push button is ON the motor should turn ON
-HLR 3  |Relay should control the motor
+HLR 3  |Arduino should control the relay
+HLR 4  |Relay should drive the motor.
 
 ## Low Level Requirements
 
