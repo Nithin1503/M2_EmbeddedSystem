@@ -19,7 +19,7 @@
 
 ## Badges
  | Codiga-Code quality|Codiga-Code grade| Codacy |  Cpp-Check | Unit-Testing|
-| ----- | ----- | --- | --- | --- | 
+| ----- | ----- | ----- | ----- | ----- | 
 |![Codiga Score](https://api.codiga.io/project/31655/score/svg)|![Codiga Score](https://api.codiga.io/project/31655/status/svg)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/3da173ebf0e24b52bb8a5891621627ca)](https://www.codacy.com/gh/Nithin1503/M2_EmbeddedSystem/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nithin1503/M2_EmbeddedSystem&amp;utm_campaign=Badge_Grade)|[![Cpp-Check](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/c-cpp.yml)|[![Unit-Testing](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml)|
 
 | Build-Linux|CI| Valgrind |
