@@ -21,4 +21,6 @@
 
 [![Unit-Testing](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml)
 
+[![Valgrind](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Valgrind.yml)
+
 
