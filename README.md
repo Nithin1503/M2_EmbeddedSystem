@@ -19,4 +19,6 @@
 
 [![Build-Linux](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Build-Linux.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Build-Linux.yml)
 
+[![Unit-Testing](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Unity.yml)
+
 
