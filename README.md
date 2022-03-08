@@ -15,4 +15,8 @@
 | Project ⇨  7_ImagesAndVideos | Presentation of my project & Screenshots of some of the test cases output |
 | Project ⇨ 8_References | Links that helped me to accomplish my project|
 
+## BADGES
+
+[![Build-Linux](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Build-Linux.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/Build-Linux.yml)
+
 
