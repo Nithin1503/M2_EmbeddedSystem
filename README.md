@@ -25,4 +25,6 @@
 
 [![CI](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/CI.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/CI.yml)
 
+[![Cpp-Check](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/Nithin1503/M2_EmbeddedSystem/actions/workflows/c-cpp.yml)
+
 
