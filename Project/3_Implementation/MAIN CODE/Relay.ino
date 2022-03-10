@@ -1,5 +1,5 @@
 /**
- * @file Relay.c
+ * @file Relay.ino
  * @author Nithin Palagani()
  * @brief Code for Ardunio Relay control
  * @version 0.1
